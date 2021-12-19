@@ -19,15 +19,11 @@ load("@go_bazel_test_win_example//:def.bzl", "test_rule")
 
 test_rule(
         name = "hello_world",
-        srcs = ["hello_world.cc"],
+        srcs = ["hello_world.py"],
 )
 
--- hello_world.cc --
-#include <iostream>
-
-int main() {
-        std::cout << "Hello World!" << std::endl;
-}
+-- hello_world.py --
+print("Hello World!")
 `,
         })
 }

@@ -1,2 +1,2 @@
 def test_rule(**kwargs):
-    native.cc_binary(**kwargs)
+    native.py_binary(**kwargs)
